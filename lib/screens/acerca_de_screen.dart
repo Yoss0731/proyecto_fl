@@ -48,7 +48,7 @@ class AboutScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text('Nombre: Miguel Torrez'),
-                    Text('Matrícula: 87654321'),
+                    Text('Matrícula: 2022-0491'),
                     // Puedes agregar más detalles si es necesario
                   ],
                 ),
