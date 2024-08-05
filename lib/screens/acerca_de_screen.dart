@@ -40,7 +40,7 @@ class AboutScreen extends StatelessWidget {
             Row(
               children: [
                 CircleAvatar(
-                  backgroundImage: AssetImage('assets/images/tecnico2.jpg'),
+                  backgroundImage: AssetImage('assets/images/Diego.jpg'),
                   radius: 30,
                 ),
                 SizedBox(width: 10),

@@ -4,6 +4,7 @@ import '../database/database_helper.dart';
 import 'incidencia_form_screen.dart';
 import '../widgets/incidencia_tile.dart';
 import '../screens/acerca_de_screen.dart'; // Importa la pantalla Acerca de
+import '../screens/login_screen.dart'; // Importa la pantalla de Inicio de Sesión
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -105,6 +106,22 @@ class _HomeScreenState extends State<HomeScreen> {
             setState(() {});
           }
         },
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LoginScreen()),
+                );
+              },
+              child: Text('Iniciar Sesión'),
+            ),
+          ],
+        ),
       ),
     );
   }
