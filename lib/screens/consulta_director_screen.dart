@@ -21,7 +21,7 @@ class _ConsultDirectorScreenState extends State<ConsultaDirectorScreen> {
         _directorDetails = json.decode(response.body);
       });
     } else {
-      throw Exception('Failed to load director details');
+      throw Exception('Error al cargar los detallles de Director');
     }
   }
 
